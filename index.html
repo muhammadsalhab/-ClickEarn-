@@ -1,35 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClickEarn</title>
+    <meta charset="UTF-8" />
+    <title>ClickEarn - الأمن السيبراني والربح من الإنترنت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         body {
-            font-family: Arial, sans-serif;
             background: #f0f4f8;
             color: #333;
-            text-align: center;
-            padding: 50px;
+            line-height: 1.6;
         }
-        h1 {
-            color: #007acc;
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: #007acc;
+            text-align: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffdd57;
         }
         .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
             background: white;
-            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            color: #007acc;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #007acc;
             display: inline-block;
+            padding-bottom: 5px;
+        }
+        section p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        footer {
+            background: #ddd;
+            text-align: center;
+            padding: 18px 10px;
+            font-size: 14px;
+            color: #555;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>ClickEarn</h1>
+        <p>حماية ذكية وفرص ربح حقيقية في عالم التقنية</p>
+    </header>
+
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#security">الأمن السيبراني</a>
+        <a href="#earning">الربح من الإنترنت</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
     <div class="container">
-        <h1>مرحبًا بك في ClickEarn!</h1>
-        <p>موقعك الإلكتروني أصبح جاهزًا للعمل 🎉</p>
-        <p>ترقب محتوى مميز قادم قريبًا!</p>
+        <section id="security">
+            <h2>الأمن السيبراني</h2>
+            <p>
+                تعلم كيف تحمي نفسك وأجهزتك من الهجمات الإلكترونية، وتعرف على أساسيات الحماية الرقمية وأدواتها الحديثة.  
+                نوفر لك مقالات سهلة التطبيق ونصائح مضمونة لتأمين حساباتك وبياناتك الشخصية.
+            </p>
+        </section>
+
+        <section id="earning">
+            <h2>الربح من الإنترنت</h2>
+            <p>
+                اكتشف طرقًا آمنة وفعالة للربح من الإنترنت من خلال العمل الحر، التسويق بالعمولة، التجارة الإلكترونية، وغيرها من الفرص الحقيقية.  
+                نرشدك خطوة بخطوة لتحقيق دخل مستدام.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+            <p>
+                لديك سؤال أو اقتراح؟ نحن هنا للمساعدة! تواصل معنا عبر البريد الإلكتروني أو عبر حساباتنا على وسائل التواصل الاجتماعي.
+            </p>
+        </section>
     </div>
+
+    <footer>
+        جميع الحقوق محفوظة &copy; ClickEarn 2025
+    </footer>
 </body>
 </html>
