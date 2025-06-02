@@ -54,6 +54,20 @@
       text-align: center;
       padding: 15px;
     }
+
+    /* تصميم صندوق الدردشة */
+    #chatango-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 350px;
+      height: 400px;
+      border: 2px solid #001f54;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: white;
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -82,19 +96,27 @@
     &copy; 2025 ClickEarn - جميع الحقوق محفوظة
   </footer>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/683dba3c58ead6190c5cc016/1isohuvfa';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <!-- صندوق الدردشة -->
+  <div id="chatango-box">
+    <script id="cid0020000350484455246" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 350px; height: 400px;">
+    {
+      "handle": "ClickEarnChat",
+      "arch": "js",
+      "styles": {
+        "a": "001f54",
+        "b": 100,
+        "c": "ffffff",
+        "d": "001f54",
+        "k": "001f54",
+        "l": "ffffff",
+        "m": "001f54",
+        "n": "FFFFFF",
+        "p": "10",
+        "q": "001f54"
+      }
+    }
+    </script>
+  </div>
 
 </body>
 </html>
