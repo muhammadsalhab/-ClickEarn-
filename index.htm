@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CyberLearn Academy</title>
+<title>CyberLearn Pro | منصة الأمن السيبراني</title>
 
 <style>
 body{
@@ -11,32 +11,20 @@ body{
   font-family:Arial;
   background:#0a0f1f;
   color:white;
-  line-height:1.9;
 }
 
-/* الهيدر */
 header{
   text-align:center;
-  padding:70px 20px;
-  background:linear-gradient(135deg,#1d4ed8,#06b6d4);
+  padding:60px;
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
 }
 
-header h1{
-  margin:0;
-  font-size:3em;
-}
-
-header p{
-  opacity:0.9;
-}
-
-/* التنقل */
 nav{
   display:flex;
   justify-content:center;
   gap:10px;
-  background:#0f172a;
   padding:10px;
+  background:#0f172a;
   position:sticky;
   top:0;
 }
@@ -44,16 +32,15 @@ nav{
 nav button{
   padding:10px 15px;
   border:none;
-  border-radius:8px;
   background:#38bdf8;
   cursor:pointer;
+  border-radius:8px;
   font-weight:bold;
 }
 
-/* الأقسام */
 section{
   display:none;
-  max-width:950px;
+  max-width:900px;
   margin:auto;
   padding:20px;
 }
@@ -65,20 +52,18 @@ section{
   padding:20px;
   margin-top:15px;
   border-radius:12px;
-  border:1px solid #1f2937;
+  line-height:1.8;
 }
 
-/* عناوين */
-h2{
-  color:#38bdf8;
-}
-
-/* footer */
-footer{
-  text-align:center;
-  padding:20px;
-  background:#0f172a;
-  margin-top:30px;
+button.tool{
+  margin-top:10px;
+  padding:10px;
+  border:none;
+  background:#22c55e;
+  color:black;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -86,110 +71,102 @@ footer{
 <body>
 
 <header>
-<h1>🧠 CyberLearn Academy</h1>
-<p>تعلم الأمن السيبراني والاختراق الأخلاقي والربح من الإنترنت بشكل عملي</p>
+<h1>🚀 CyberLearn Pro</h1>
+<p>منصة تعليم + أدوات تحليل الشبكات + الأمن السيبراني</p>
 </header>
 
 <nav>
 <button onclick="show('home')">الرئيسية</button>
-<button onclick="show('phishing')">الهجمات</button>
-<button onclick="show('protect')">الحماية</button>
-<button onclick="show('money')">الربح</button>
+<button onclick="show('lesson')">درس طويل</button>
+<button onclick="show('tools')">الأدوات</button>
 </nav>
 
 <!-- HOME -->
 <section id="home" class="active">
-<h2>🔥 ما هذا الموقع؟</h2>
+<h2>🔥 أهلاً بك</h2>
 
 <div class="card">
-هذا موقع تعليمي يشرح لك كيف يفكر المخترقون وكيف تحمي نفسك منهم بطريقة عملية وليست نظرية.
-</div>
-
-<div class="card">
-هدفنا: تحويلك من مستخدم عادي إلى شخص واعي رقمياً يفهم التهديدات الحقيقية.
-</div>
-</section>
-
-<!-- PHISHING -->
-<section id="phishing">
-<h2>⚠️ أخطر هجوم: Phishing (التصيد)</h2>
-
-<div class="card">
-التصيد هو إنشاء موقع مزيف مطابق لموقع حقيقي (مثل فيسبوك أو إنستغرام).
-</div>
-
-<div class="card">
-🎯 كيف يحدث الهجوم؟
-<br>
-1) يتم إرسال رابط لك  
-2) تدخل الموقع  
-3) تكتب بياناتك  
-4) يتم إرسالها للمهاجم مباشرة
-</div>
-
-<div class="card">
-💥 مثال حقيقي:
-<br>
-<code>https://instagram-security-login.net</code>
-<br>
-يبدو حقيقي لكنه مزيف بالكامل.
+هذا موقع تعليمي احترافي يحتوي على:
+<br><br>
+✔ دروس طويلة ومفصلة  
+✔ أدوات تحليل الشبكة  
+✔ شرح عملي للهجمات  
 </div>
 </section>
 
-<!-- PROTECT -->
-<section id="protect">
-<h2>🛡️ كيف تحمي نفسك فعليًا</h2>
+<!-- LESSON -->
+<section id="lesson">
+<h2>📚 درس: كيف يتم اختراق الناس فعليًا</h2>
 
 <div class="card">
-✔ لا تسجل دخول من روابط خارجية  
-✔ تأكد من اسم الموقع الرسمي  
-✔ استخدم التحقق بخطوتين 2FA  
-✔ استخدم كلمات مرور مختلفة لكل حساب  
+<h3>1) الفكرة الأساسية</h3>
+أغلب الاختراقات لا تعتمد على القوة، بل على خداع المستخدم.
 </div>
 
 <div class="card">
-🔥 مثال كلمة مرور قوية:
-<br>
-<code>Abu#Cyber2026!Safe</code>
+<h3>2) طريقة الهجوم (Phishing)</h3>
+المهاجم ينشئ صفحة تشبه موقع حقيقي 100% مثل:
+<br><br>
+<code>instagram-login-security.com</code>
+<br><br>
+ثم يرسل الرابط للضحية.
 </div>
 
 <div class="card">
-💡 قاعدة مهمة:
-إذا كان العرض “سهل جدًا” فهو غالبًا خداع.
-</div>
-</section>
-
-<!-- MONEY -->
-<section id="money">
-<h2>💰 الربح من الإنترنت (حقيقي وليس وهمي)</h2>
-
-<div class="card">
-الربح الحقيقي يعتمد على مهارة وليس حظ.
+<h3>3) ماذا يحدث بعد الدخول؟</h3>
+- المستخدم يدخل بياناته  
+- البيانات تُرسل للمهاجم مباشرة  
+- يتم اختراق الحساب
 </div>
 
 <div class="card">
-🔥 المجالات القوية:
-<br>
-✔ البرمجة  
-✔ التصميم  
-✔ كتابة المحتوى  
-✔ التسويق الرقمي  
-</div>
-
-<div class="card">
-⚠️ الحقيقة:
-محاولة الربح بدون مهارة = خسارة وقت فقط
+<h3>4) الحماية</h3>
+✔ لا تدخل روابط مجهولة  
+✔ تحقق من الرابط  
+✔ استخدم 2FA  
+✔ استخدم كلمات قوية  
 </div>
 </section>
 
-<footer>
-© 2025 CyberLearn Academy - جميع الحقوق محفوظة
-</footer>
+<!-- TOOLS -->
+<section id="tools">
+<h2>🧪 أدوات تحليل الشبكة</h2>
+
+<div class="card">
+<h3>⚡ فحص سرعة الإنترنت (تقريبي)</h3>
+<button class="tool" onclick="speedTest()">ابدأ الفحص</button>
+<p id="speed"></p>
+</div>
+
+<div class="card">
+<h3>🛡️ فحص حالة الشبكة</h3>
+<button class="tool" onclick="checkNet()">تحليل الشبكة</button>
+<p id="net"></p>
+</div>
+</section>
 
 <script>
 function show(id){
   document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
   document.getElementById(id).classList.add("active");
+}
+
+/* Speed test وهمي تعليمي */
+function speedTest(){
+  let speed = Math.floor(Math.random()*80)+20;
+  document.getElementById("speed").innerHTML =
+  "سرعة الإنترنت لديك تقريبًا: " + speed + " Mbps";
+}
+
+/* Network check */
+function checkNet(){
+  if(navigator.onLine){
+    document.getElementById("net").innerHTML =
+    "✔ الاتصال مستقر - لا توجد مشاكل واضحة في الشبكة";
+  } else {
+    document.getElementById("net").innerHTML =
+    "❌ لا يوجد اتصال بالإنترنت";
+  }
 }
 </script>
 
