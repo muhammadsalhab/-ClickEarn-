@@ -13,6 +13,7 @@ body{
   color:white;
 }
 
+/* الهيدر */
 header{
   text-align:center;
   padding:80px 20px;
@@ -24,65 +25,141 @@ header h1{
   margin:0;
 }
 
-.container{
-  max-width:1000px;
-  margin:auto;
+/* شريط التنقل */
+nav{
+  background:#111827;
+  padding:10px;
+  text-align:center;
+  position:sticky;
+  top:0;
+}
+
+nav button{
+  margin:5px;
+  padding:10px 15px;
+  border:none;
+  cursor:pointer;
+  background:#38bdf8;
+  color:black;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* الأقسام */
+section{
+  display:none;
   padding:20px;
+  max-width:900px;
+  margin:auto;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
+.box{
   background:#1e293b;
   padding:20px;
   border-radius:12px;
-  transition:0.3s;
+  margin-top:15px;
+  line-height:1.8;
 }
 
-.card:hover{
-  transform:translateY(-8px);
+/* الصفحة الرئيسية تظهر أول شيء */
+#home{
+  display:block;
 }
 
-a{
-  color:#38bdf8;
-  text-decoration:none;
-  font-weight:bold;
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  margin-top:30px;
 }
 </style>
+
+<script>
+function show(id){
+  document.querySelectorAll("section").forEach(s=>s.style.display="none");
+  document.getElementById(id).style.display="block";
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>📚 ClickEarn Academy</h1>
-<p>تعلم الأمن السيبراني والربح من الإنترنت بطريقة سهلة وواضحة</p>
+<p>تعلم الأمن السيبراني والربح من الإنترنت بطريقة سهلة ومفهومة</p>
 </header>
 
-<div class="container">
+<nav>
+<button onclick="show('home')">الرئيسية</button>
+<button onclick="show('security')">الأمن السيبراني</button>
+<button onclick="show('money')">الربح من الإنترنت</button>
+<button onclick="show('about')">من نحن</button>
+</nav>
 
-<h2>🔥 الدروس التعليمية</h2>
+<!-- الرئيسية -->
+<section id="home">
+<h2>🔥 أهلاً بك في الأكاديمية</h2>
+<div class="box">
+هذا موقع تعليمي بسيط لكن احترافي يساعدك تتعلم:
+<br><br>
+✔ الأمن السيبراني<br>
+✔ الربح من الإنترنت<br>
+✔ أساسيات الحماية الرقمية<br>
+</div>
+</section>
 
-<div class="grid">
+<!-- الأمن السيبراني -->
+<section id="security">
+<h2>🔐 الأمن السيبراني</h2>
 
-<div class="card">
-<h3>🔐 كيف تحمي حسابك من الاختراق</h3>
-<p>تعلم أهم طرق الحماية من الاختراق خطوة بخطوة.</p>
-<a href="security.html">ابدأ الدرس</a>
+<div class="box">
+<h3>ما هو الأمن السيبراني؟</h3>
+هو حماية حساباتك وأجهزتك من الاختراق.
 </div>
 
-<div class="card">
-<h3>💰 كيف تبدأ الربح من الإنترنت</h3>
-<p>تعلم طرق حقيقية للربح بدون خداع.</p>
-<a href="money.html">ابدأ الدرس</a>
+<div class="box">
+<h3>طرق الحماية</h3>
+✔ كلمات مرور قوية<br>
+✔ عدم فتح روابط مجهولة<br>
+✔ تفعيل التحقق بخطوتين
 </div>
 
+<div class="box">
+<h3>نصيحة مهمة</h3>
+أغلب الاختراقات سببها المستخدم نفسه وليس النظام.
+</div>
+</section>
+
+<!-- الربح -->
+<section id="money">
+<h2>💰 الربح من الإنترنت</h2>
+
+<div class="box">
+<h3>طرق الربح</h3>
+✔ العمل الحر<br>
+✔ التسويق بالعمولة<br>
+✔ صناعة المحتوى
 </div>
 
+<div class="box">
+<h3>نصيحة</h3>
+ركز على مهارة واحدة فقط في البداية.
 </div>
+</section>
+
+<!-- من نحن -->
+<section id="about">
+<h2>📌 من نحن</h2>
+
+<div class="box">
+ClickEarn Academy موقع عربي تعليمي هدفه تبسيط الأمن السيبراني والربح من الإنترنت للمبتدئين.
+</div>
+</section>
+
+<footer>
+© 2025 ClickEarn Academy - جميع الحقوق محفوظة
+</footer>
 
 </body>
 </html>
