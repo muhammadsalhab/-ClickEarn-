@@ -1,61 +1,33 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head><meta name="description" content="ClickEarn موقع عربي للأمن السيبراني والربح من الإنترنت يقدم مقالات ونصائح للمبتدئين" />
-<meta name="keywords" content="الأمن السيبراني, الربح من الإنترنت, ClickEarn, حماية, تعلم الربح" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ClickEarn | منصة المعرفة والربح</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClickEarn Academy</title>
 
 <style>
 body{
   margin:0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg,#0f172a,#1e293b);
+  font-family:Arial;
+  background:#0b1220;
   color:white;
 }
 
-/* الهيدر الكبير */
-.hero{
+header{
   text-align:center;
-  padding:100px 20px;
-  background: linear-gradient(135deg,#2563eb,#06b6d4);
-  animation: fadeIn 1s ease-in-out;
+  padding:80px 20px;
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
 }
 
-.hero h1{
-  font-size:3.5em;
+header h1{
+  font-size:3em;
   margin:0;
 }
 
-.hero p{
-  font-size:1.3em;
-  margin-top:10px;
-  color:#e0f2fe;
-}
-
-/* زر */
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 25px;
-  background:white;
-  color:#0f172a;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
-}
-
-.btn:hover{
-  transform:scale(1.1);
-  background:#e2e8f0;
-}
-
-/* الكروت */
 .container{
-  max-width:1100px;
+  max-width:1000px;
   margin:auto;
-  padding:40px 20px;
+  padding:20px;
 }
 
 .grid{
@@ -67,78 +39,50 @@ body{
 .card{
   background:#1e293b;
   padding:20px;
-  border-radius:15px;
+  border-radius:12px;
   transition:0.3s;
-  box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
 .card:hover{
-  transform:translateY(-10px);
-  background:#334155;
+  transform:translateY(-8px);
 }
 
-.card h3{
+a{
   color:#38bdf8;
-}
-
-/* انيميشن */
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(-30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#020617;
-  margin-top:40px;
-  color:#94a3b8;
+  text-decoration:none;
+  font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- الهيدر -->
-<div class="hero">
-  <h1>🔥 ClickEarn</h1>
-  <p>منصة عربية للأمن السيبراني والربح من الإنترنت</p>
-  <a class="btn" href="#content">ابدأ الآن</a>
-</div>
+<header>
+<h1>📚 ClickEarn Academy</h1>
+<p>تعلم الأمن السيبراني والربح من الإنترنت بطريقة سهلة وواضحة</p>
+</header>
 
-<!-- المحتوى -->
-<div class="container" id="content">
+<div class="container">
 
-<h2>✨ مقالات مميزة</h2>
+<h2>🔥 الدروس التعليمية</h2>
 
 <div class="grid">
 
-  <div class="card">
-    <h3>🔐 الأمن السيبراني</h3>
-    <p>تعلم كيف تحمي نفسك من الاختراق والهجمات.</p>
-    <a class="btn" href="security.html">دخول</a>
-  </div>
+<div class="card">
+<h3>🔐 كيف تحمي حسابك من الاختراق</h3>
+<p>تعلم أهم طرق الحماية من الاختراق خطوة بخطوة.</p>
+<a href="security.html">ابدأ الدرس</a>
+</div>
 
-  <div class="card">
-    <h3>💰 الربح من الإنترنت</h3>
-    <p>طرق حقيقية لبدء الربح من الإنترنت.</p>
-    <a class="btn" href="money.html">دخول</a>
-  </div>
-
-  <div class="card">
-    <h3>📌 من نحن</h3>
-    <p>تعرف على هدف موقع ClickEarn.</p>
-    <a class="btn" href="about.html">دخول</a>
-  </div>
-
+<div class="card">
+<h3>💰 كيف تبدأ الربح من الإنترنت</h3>
+<p>تعلم طرق حقيقية للربح بدون خداع.</p>
+<a href="money.html">ابدأ الدرس</a>
 </div>
 
 </div>
 
-<footer>
-© 2025 ClickEarn - جميع الحقوق محفوظة
-</footer>
+</div>
 
 </body>
 </html>
