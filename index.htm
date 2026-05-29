@@ -2,23 +2,22 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CyberLearn | الأمن السيبراني والربح من الإنترنت</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberLearn Pro | أكاديمية الأمن والربح</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial;
-  background:#0b1220;
+  background:#070b18;
   color:white;
-  line-height:1.8;
 }
 
 /* الهيدر */
 header{
   text-align:center;
-  padding:70px 20px;
-  background:linear-gradient(135deg,#0ea5e9,#2563eb);
+  padding:80px 20px;
+  background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
 }
 
 header h1{
@@ -30,7 +29,7 @@ header p{
   opacity:0.9;
 }
 
-/* تنقل */
+/* شريط */
 nav{
   display:flex;
   justify-content:center;
@@ -53,20 +52,34 @@ nav button{
 /* الأقسام */
 section{
   display:none;
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
   padding:20px;
 }
 
-.active{
-  display:block;
-}
+.active{display:block;}
 
 .card{
-  background:#1e293b;
+  background:#111827;
   padding:20px;
-  border-radius:12px;
   margin-top:15px;
+  border-radius:12px;
+  border:1px solid #1f2937;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.02);
+  border-color:#38bdf8;
+}
+
+.badge{
+  display:inline-block;
+  padding:5px 10px;
+  background:#1d4ed8;
+  border-radius:6px;
+  font-size:12px;
+  margin-bottom:10px;
 }
 
 /* footer */
@@ -74,8 +87,7 @@ footer{
   text-align:center;
   padding:20px;
   background:#0f172a;
-  margin-top:30px;
-  opacity:0.8;
+  margin-top:40px;
 }
 </style>
 </head>
@@ -83,87 +95,94 @@ footer{
 <body>
 
 <header>
-<h1>🧠 CyberLearn</h1>
-<p>تعلم الأمن السيبراني والربح من الإنترنت بطريقة عملية وواضحة</p>
+<h1>🚀 CyberLearn Pro</h1>
+<p>منصة عربية متقدمة لتعلم الأمن السيبراني والربح من الإنترنت</p>
 </header>
 
 <nav>
 <button onclick="show('home')">الرئيسية</button>
 <button onclick="show('cyber')">الأمن السيبراني</button>
 <button onclick="show('money')">الربح</button>
-<button onclick="show('tips')">نصائح</button>
+<button onclick="show('roadmap')">خارطة التعلم</button>
 </nav>
 
 <!-- HOME -->
 <section id="home" class="active">
-<h2>🔥 مرحباً بك</h2>
+<h2>🔥 لماذا هذا المشروع مختلف؟</h2>
+
 <div class="card">
-هذا موقع تعليمي حقيقي يساعدك تفهم:
-<br>✔ كيف تحمي نفسك من الاختراق
-<br>✔ كيف تبدأ الربح من الإنترنت
-<br>✔ وكيف تفكر بشكل رقمي صحيح
+<div class="badge">مهم</div>
+هذا ليس موقع معلومات عشوائية… هذا مسار تعليمي كامل من الصفر للاحتراف.
+</div>
+
+<div class="card">
+✔ محتوى تدريجي  
+✔ شرح عملي  
+✔ أمثلة حقيقية  
+✔ مناسب للمبتدئين
 </div>
 </section>
 
 <!-- CYBER -->
 <section id="cyber">
-<h2>🔐 الأمن السيبراني (شرح حقيقي)</h2>
+<h2>🔐 الأمن السيبراني الحقيقي</h2>
 
 <div class="card">
-<h3>ما هو الاختراق فعليًا؟</h3>
-الاختراق غالبًا لا يتم بكسر النظام، بل بخداع المستخدم للحصول على بياناته.
+<div class="badge">أساس</div>
+الأمن السيبراني هو حماية البيانات من السرقة أو الاختراق عبر الإنترنت.
 </div>
 
 <div class="card">
-<h3>أشهر طريقة: التصيّد</h3>
-يتم إنشاء موقع مزيف يشبه فيسبوك أو إنستغرام، وعندما تسجل دخولك يتم سرقة بياناتك مباشرة.
+<div class="badge">خطر شائع</div>
+Phishing: صفحات مزيفة تشبه المواقع الحقيقية لسرقة كلمات المرور.
 </div>
 
 <div class="card">
-<h3>كيف تحمي نفسك؟</h3>
-✔ لا تدخل روابط مجهولة  
-✔ فعّل التحقق بخطوتين  
-✔ استخدم كلمات مرور قوية  
-✔ لا تعيد استخدام نفس كلمة المرور
+<div class="badge">حماية</div>
+✔ كلمات مرور قوية  
+✔ 2FA  
+✔ عدم فتح روابط مجهولة  
+✔ تحديث النظام باستمرار  
 </div>
 </section>
 
 <!-- MONEY -->
 <section id="money">
-<h2>💰 الربح من الإنترنت (بشكل واقعي)</h2>
+<h2>💰 الربح من الإنترنت</h2>
 
 <div class="card">
-الربح من الإنترنت ليس سريعًا، لكنه ممكن جدًا إذا بدأت بالطريقة الصحيحة.
+الربح الحقيقي ليس “ضغط زر”، بل بناء مهارة مطلوبة.
 </div>
 
 <div class="card">
-<h3>أفضل الطرق:</h3>
-✔ العمل الحر (Freelancing)  
-✔ التسويق بالعمولة  
-✔ صناعة المحتوى
+🔥 مجالات قوية:
+✔ البرمجة  
+✔ التصميم  
+✔ التسويق  
+✔ صناعة المحتوى  
 </div>
 
 <div class="card">
-<h3>خطأ شائع</h3>
-محاولة تعلم كل شيء مرة واحدة = ضياع وقت.
-ركز على مهارة واحدة فقط.
+⚠️ خطأ المبتدئين:
+تجربة كل شيء = لا شيء
 </div>
 </section>
 
-<!-- TIPS -->
-<section id="tips">
-<h2>🧠 نصائح ذهبية</h2>
+<!-- ROADMAP -->
+<section id="roadmap">
+<h2>🧭 خارطة التعلم</h2>
 
 <div class="card">
-✔ التعلم بدون تطبيق = لا فائدة  
-✔ ابدأ صغير واستمر  
-✔ لا تبحث عن الربح السريع  
-✔ ركز على مهارة واحدة
+1️⃣ تعلم الأساس  
+2️⃣ اختر مجال واحد  
+3️⃣ طبّق يوميًا  
+4️⃣ ابنِ مشروع صغير  
+5️⃣ طور نفسك
 </div>
 </section>
 
 <footer>
-© 2025 CyberLearn - جميع الحقوق محفوظة
+© 2025 CyberLearn Pro | مشروع تعليمي عربي
 </footer>
 
 <script>
