@@ -2,34 +2,35 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberLearn Pro | أكاديمية الأمن والربح</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberLearn Academy</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial;
-  background:#070b18;
+  background:#0a0f1f;
   color:white;
+  line-height:1.9;
 }
 
 /* الهيدر */
 header{
   text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+  padding:70px 20px;
+  background:linear-gradient(135deg,#1d4ed8,#06b6d4);
 }
 
 header h1{
-  font-size:3em;
   margin:0;
+  font-size:3em;
 }
 
 header p{
   opacity:0.9;
 }
 
-/* شريط */
+/* التنقل */
 nav{
   display:flex;
   justify-content:center;
@@ -41,10 +42,10 @@ nav{
 }
 
 nav button{
-  background:#38bdf8;
-  border:none;
   padding:10px 15px;
+  border:none;
   border-radius:8px;
+  background:#38bdf8;
   cursor:pointer;
   font-weight:bold;
 }
@@ -52,7 +53,7 @@ nav button{
 /* الأقسام */
 section{
   display:none;
-  max-width:1000px;
+  max-width:950px;
   margin:auto;
   padding:20px;
 }
@@ -65,21 +66,11 @@ section{
   margin-top:15px;
   border-radius:12px;
   border:1px solid #1f2937;
-  transition:0.3s;
 }
 
-.card:hover{
-  transform:scale(1.02);
-  border-color:#38bdf8;
-}
-
-.badge{
-  display:inline-block;
-  padding:5px 10px;
-  background:#1d4ed8;
-  border-radius:6px;
-  font-size:12px;
-  margin-bottom:10px;
+/* عناوين */
+h2{
+  color:#38bdf8;
 }
 
 /* footer */
@@ -87,7 +78,7 @@ footer{
   text-align:center;
   padding:20px;
   background:#0f172a;
-  margin-top:40px;
+  margin-top:30px;
 }
 </style>
 </head>
@@ -95,94 +86,104 @@ footer{
 <body>
 
 <header>
-<h1>🚀 CyberLearn Pro</h1>
-<p>منصة عربية متقدمة لتعلم الأمن السيبراني والربح من الإنترنت</p>
+<h1>🧠 CyberLearn Academy</h1>
+<p>تعلم الأمن السيبراني والاختراق الأخلاقي والربح من الإنترنت بشكل عملي</p>
 </header>
 
 <nav>
 <button onclick="show('home')">الرئيسية</button>
-<button onclick="show('cyber')">الأمن السيبراني</button>
+<button onclick="show('phishing')">الهجمات</button>
+<button onclick="show('protect')">الحماية</button>
 <button onclick="show('money')">الربح</button>
-<button onclick="show('roadmap')">خارطة التعلم</button>
 </nav>
 
 <!-- HOME -->
 <section id="home" class="active">
-<h2>🔥 لماذا هذا المشروع مختلف؟</h2>
+<h2>🔥 ما هذا الموقع؟</h2>
 
 <div class="card">
-<div class="badge">مهم</div>
-هذا ليس موقع معلومات عشوائية… هذا مسار تعليمي كامل من الصفر للاحتراف.
+هذا موقع تعليمي يشرح لك كيف يفكر المخترقون وكيف تحمي نفسك منهم بطريقة عملية وليست نظرية.
 </div>
 
 <div class="card">
-✔ محتوى تدريجي  
-✔ شرح عملي  
-✔ أمثلة حقيقية  
-✔ مناسب للمبتدئين
+هدفنا: تحويلك من مستخدم عادي إلى شخص واعي رقمياً يفهم التهديدات الحقيقية.
 </div>
 </section>
 
-<!-- CYBER -->
-<section id="cyber">
-<h2>🔐 الأمن السيبراني الحقيقي</h2>
+<!-- PHISHING -->
+<section id="phishing">
+<h2>⚠️ أخطر هجوم: Phishing (التصيد)</h2>
 
 <div class="card">
-<div class="badge">أساس</div>
-الأمن السيبراني هو حماية البيانات من السرقة أو الاختراق عبر الإنترنت.
+التصيد هو إنشاء موقع مزيف مطابق لموقع حقيقي (مثل فيسبوك أو إنستغرام).
 </div>
 
 <div class="card">
-<div class="badge">خطر شائع</div>
-Phishing: صفحات مزيفة تشبه المواقع الحقيقية لسرقة كلمات المرور.
+🎯 كيف يحدث الهجوم؟
+<br>
+1) يتم إرسال رابط لك  
+2) تدخل الموقع  
+3) تكتب بياناتك  
+4) يتم إرسالها للمهاجم مباشرة
 </div>
 
 <div class="card">
-<div class="badge">حماية</div>
-✔ كلمات مرور قوية  
-✔ 2FA  
-✔ عدم فتح روابط مجهولة  
-✔ تحديث النظام باستمرار  
+💥 مثال حقيقي:
+<br>
+<code>https://instagram-security-login.net</code>
+<br>
+يبدو حقيقي لكنه مزيف بالكامل.
+</div>
+</section>
+
+<!-- PROTECT -->
+<section id="protect">
+<h2>🛡️ كيف تحمي نفسك فعليًا</h2>
+
+<div class="card">
+✔ لا تسجل دخول من روابط خارجية  
+✔ تأكد من اسم الموقع الرسمي  
+✔ استخدم التحقق بخطوتين 2FA  
+✔ استخدم كلمات مرور مختلفة لكل حساب  
+</div>
+
+<div class="card">
+🔥 مثال كلمة مرور قوية:
+<br>
+<code>Abu#Cyber2026!Safe</code>
+</div>
+
+<div class="card">
+💡 قاعدة مهمة:
+إذا كان العرض “سهل جدًا” فهو غالبًا خداع.
 </div>
 </section>
 
 <!-- MONEY -->
 <section id="money">
-<h2>💰 الربح من الإنترنت</h2>
+<h2>💰 الربح من الإنترنت (حقيقي وليس وهمي)</h2>
 
 <div class="card">
-الربح الحقيقي ليس “ضغط زر”، بل بناء مهارة مطلوبة.
+الربح الحقيقي يعتمد على مهارة وليس حظ.
 </div>
 
 <div class="card">
-🔥 مجالات قوية:
+🔥 المجالات القوية:
+<br>
 ✔ البرمجة  
 ✔ التصميم  
-✔ التسويق  
-✔ صناعة المحتوى  
+✔ كتابة المحتوى  
+✔ التسويق الرقمي  
 </div>
 
 <div class="card">
-⚠️ خطأ المبتدئين:
-تجربة كل شيء = لا شيء
-</div>
-</section>
-
-<!-- ROADMAP -->
-<section id="roadmap">
-<h2>🧭 خارطة التعلم</h2>
-
-<div class="card">
-1️⃣ تعلم الأساس  
-2️⃣ اختر مجال واحد  
-3️⃣ طبّق يوميًا  
-4️⃣ ابنِ مشروع صغير  
-5️⃣ طور نفسك
+⚠️ الحقيقة:
+محاولة الربح بدون مهارة = خسارة وقت فقط
 </div>
 </section>
 
 <footer>
-© 2025 CyberLearn Pro | مشروع تعليمي عربي
+© 2025 CyberLearn Academy - جميع الحقوق محفوظة
 </footer>
 
 <script>
