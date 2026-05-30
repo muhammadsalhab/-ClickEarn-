@@ -228,11 +228,11 @@ li { margin-bottom: 8px; }
 </header>
 
 <nav>
-<button onclick="show('home')">الرئيسية</button>
-<button onclick="show('beginners')">👶 قسم المبتدئين</button>
-<button onclick="show('pros')">🥷 قسم المحترفين</button>
-<button onclick="show('tools')">🛠️ أدوات الفحص</button>
-<button onclick="show('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
+<button onclick="showSection('home')">الرئيسية</button>
+<button onclick="showSection('beginners')">👶 قسم المبتدئين</button>
+<button onclick="showSection('pros')">🥷 قسم المحترفين</button>
+<button onclick="showSection('tools')">🛠️ أدوات الفحص</button>
+<button onclick="showSection('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
 </nav>
 
 <!-- HOME -->
@@ -352,13 +352,16 @@ li { margin-bottom: 8px; }
 </section>
 
 <script>
-// دالة التنقل الموحدة المصلحة تماماً
-function show(id){
-  var sections = document.getElementsByTagName("section");
-  for(var i=0; i<sections.length; i++){
-    sections[i].classList.remove("active");
+// دالة النقر والتنقل المصلحة والمحمية من التداخل
+function showSection(id){
+  var sections = document.querySelectorAll("section");
+  sections.forEach(function(sec) {
+    sec.classList.remove("active");
+  });
+  var target = document.getElementById(id);
+  if(target){
+    target.classList.add("active");
   }
-  document.getElementById(id).classList.add("active");
 }
 
 function startSpeedTest() {
@@ -385,4 +388,3 @@ function startSpeedTest() {
 
 function checkNetworkDetails() {
     const status = document.getElementById('net-status');
-    const rtt = document.getElementById('net-rtt');
