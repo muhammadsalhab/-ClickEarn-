@@ -228,11 +228,11 @@ li { margin-bottom: 8px; }
 </header>
 
 <nav>
-<button onclick="changeTab('home')">الرئيسية</button>
-<button onclick="changeTab('beginners')">👶 قسم المبتدئين</button>
-<button onclick="changeTab('pros')">🥷 قسم المحترفين</button>
-<button onclick="changeTab('tools')">🛠️ أدوات الفحص</button>
-<button onclick="changeTab('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
+<button onclick="show('home')">الرئيسية</button>
+<button onclick="show('beginners')">👶 قسم المبتدئين</button>
+<button onclick="show('pros')">🥷 قسم المحترفين</button>
+<button onclick="show('tools')">🛠️ أدوات الفحص</button>
+<button onclick="show('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
 </nav>
 
 <!-- HOME -->
@@ -352,7 +352,8 @@ li { margin-bottom: 8px; }
 </section>
 
 <script>
-function changeTab(id){
+// دالة التنقل الموحدة المصلحة تماماً
+function show(id){
   var sections = document.getElementsByTagName("section");
   for(var i=0; i<sections.length; i++){
     sections[i].classList.remove("active");
