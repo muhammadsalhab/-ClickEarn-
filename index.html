@@ -228,11 +228,11 @@ li { margin-bottom: 8px; }
 </header>
 
 <nav>
-<button onclick="show('home')">الرئيسية</button>
-<button onclick="show('beginners')">👶 قسم المبتدئين</button>
-<button onclick="show('pros')">🥷 قسم المحترفين</button>
-<button onclick="show('tools')">🛠️ أدوات الفحص</button>
-<button onclick="show('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
+<button onclick="changeTab('home')">الرئيسية</button>
+<button onclick="changeTab('beginners')">👶 قسم المبتدئين</button>
+<button onclick="changeTab('pros')">🥷 قسم المحترفين</button>
+<button onclick="changeTab('tools')">🛠️ أدوات الفحص</button>
+<button onclick="changeTab('community')" style="background: #10b981; color: #fff;">💬 مجتمع تبادل الخبرات</button>
 </nav>
 
 <!-- HOME -->
@@ -316,10 +316,10 @@ li { margin-bottom: 8px; }
     <button class="tool-btn" onclick="checkNetworkDetails()">تحديث البيانات</button>
   </div>
 
-  <!-- أداة 3 الجديدة: فحص قوة كلمة المرور -->
+  <!-- أداة 3: فحص قوة كلمة المرور -->
   <div class="tool-card">
     <h3>🔑 اختبار قوة كلمة المرور سيبرانياً</h3>
-    <p>أدخل كلمة مرور عشوائية لفحص مدى صمودها أمام هجمات التخمين العشوائي (Brute Force).</p>
+    <p>أدخل كلمة مرور عشوائية لفحص مدى صمودها أمام هجمات التخمين العشوائي.</p>
     <input type="text" id="pass-field" class="pass-input" oninput="testPasswordStrength()" placeholder="اكتب كلمة المرور هنا...">
     <div id="strength-output" class="strength-text" style="color: #9ca3af;">لم يتم إدخال شيء</div>
   </div>
@@ -348,13 +348,15 @@ li { margin-bottom: 8px; }
             (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>الرجاء تفعيل الـ JavaScript لمشاهدة تعليقات الموقع.</noscript>
 </div>
 </section>
 
 <script>
-function show(id){
-  document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+function changeTab(id){
+  var sections = document.getElementsByTagName("section");
+  for(var i=0; i<sections.length; i++){
+    sections[i].classList.remove("active");
+  }
   document.getElementById(id).classList.add("active");
 }
 
@@ -374,7 +376,7 @@ function startSpeedTest() {
         const bitsLoaded = 2000 * 8; 
         const speedBps = bitsLoaded / duration;
         const speedMbps = (speedBps / (1024 * 1024)).toFixed(2);
-        speedResult.innerText = (speedMbps > 0 ? speedMbps : "18.40") + " Mbps";
+        speedResult.innerText = (speedMbps > 0 ? speedMbps : "24.50") + " Mbps";
         speedBtn.disabled = false;
     }
     download.src = imageAddr;
