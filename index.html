@@ -108,10 +108,44 @@ li { margin-bottom: 8px; }
   border: 0;
 }
 
-/* التنسيقات الخاصة بأدوات الشبكة */
+/* أزرار الربح والتسويق بالعمولة */
+.affiliate-box {
+  background: linear-gradient(135deg, #1e1b4b, #111827);
+  border: 1px solid #3b82f6;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.affiliate-btn {
+  display: inline-block;
+  background: #10b981;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.affiliate-btn:hover {
+  background: #059669;
+  transform: scale(1.03);
+}
+
+.btn-secondary {
+  background: #3b82f6;
+}
+.btn-secondary:hover {
+  background: #2563eb;
+}
+
+/* التنسيقات الخاصة بأدوات الشبكة والسيبراني */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 15px;
 }
@@ -165,6 +199,24 @@ li { margin-bottom: 8px; }
   color: #38bdf8;
   font-weight: bold;
 }
+
+/* أداة فحص كلمة المرور */
+.pass-input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #1f2937;
+  background: #070b16;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.strength-text {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
 </style>
 </head>
 
@@ -210,6 +262,12 @@ li { margin-bottom: 8px; }
     <li>عدم استخدام كلمة مرور واحدة لأكثر من موقع.</li>
 </ul>
 </div>
+
+<div class="affiliate-box">
+    <h3>🛡️ تأمين حظر تتبع واختراق جهازك أثناء التصفح</h3>
+    <p>لحماية خصوصيتك وتشفير بيانات اتصالك بالكامل، ننصح باستخدام شبكة افتراضية خاصة (VPN) قوية وموثوقة عالمياً.</p>
+    <a href="ضع_رابط_الافلييت_هنا" target="_blank" class="affiliate-btn">احصل على خصم NordVPN الحصري من هنا</a>
+</div>
 </section>
 
 <!-- PROS SECTION -->
@@ -228,18 +286,27 @@ li { margin-bottom: 8px; }
     <li>التقاط وتحليل حزم البيانات الممررة عبر الشبكة بواسطة <code>Burp Suite</code>.</li>
 </ol>
 </div>
+
+<div class="affiliate-box">
+    <h3>🎓 جهز نفسك للوظيفة واكتسب شهادة عالمية معتمدة</h3>
+    <p>إذا كنت ترغب بالانتقال لمستوى وظيفي حقيقي واجتياز اختبارات الشهادات العالمية المعتمدة في الهكر الأخلاقي والحماية المتقدمة.</p>
+    <a href="ضع_رابط_الافلييت_هنا" target="_blank" class="affiliate-btn btn-secondary">تصفح أقوى دورات الحماية على Udemy</a>
+    <a href="ضع_رابط_الافلييت_هنا" target="_blank" class="affiliate-btn">سجل في دبلوم الأمن السيبراني من Coursera</a>
+</div>
 </section>
 
 <!-- TOOLS SECTION -->
 <section id="tools">
-<h2>🛠️ أدوات فحص الشبكة والاتصال السيبراني</h2>
+<h2>🛠️ أدوات الفحص التفاعلية والتحليل السيبراني</h2>
 <div class="tools-grid">
+  <!-- أداة 1: فحص سرعة الإنترنت -->
   <div class="tool-card">
-    <h3>⚡ فحص سرعة الإنترنت (Speed Test)</h3>
+    <h3>⚡ فحص سرعة التحميل (Speed Test)</h3>
     <div class="display-box" id="speed-result">0.00 Mbps</div>
     <button class="tool-btn" onclick="startSpeedTest()" id="speed-btn">ابدأ فحص السرعة</button>
   </div>
 
+  <!-- أداة 2: فحص حالة وبنية الشبكة -->
   <div class="tool-card">
     <h3>🔍 فحص حالة وبنية الشبكة</h3>
     <div class="info-list">
@@ -247,6 +314,14 @@ li { margin-bottom: 8px; }
       <p>🌐 زمن الاستجابة (RTT): <span id="net-rtt">--</span> ms</p>
     </div>
     <button class="tool-btn" onclick="checkNetworkDetails()">تحديث البيانات</button>
+  </div>
+
+  <!-- أداة 3 الجديدة: فحص قوة كلمة المرور -->
+  <div class="tool-card">
+    <h3>🔑 اختبار قوة كلمة المرور سيبرانياً</h3>
+    <p>أدخل كلمة مرور عشوائية لفحص مدى صمودها أمام هجمات التخمين العشوائي (Brute Force).</p>
+    <input type="text" id="pass-field" class="pass-input" oninput="testPasswordStrength()" placeholder="اكتب كلمة المرور هنا...">
+    <div id="strength-output" class="strength-text" style="color: #9ca3af;">لم يتم إدخال شيء</div>
   </div>
 </div>
 </section>
@@ -259,7 +334,6 @@ li { margin-bottom: 8px; }
 <p>هذه المساحة مخصصة للنقاش، حل التحديات الأمنية، والمساعدة المتبادلة في فهم الدروس.</p>
 </div>
 
-<!-- صندوق التعليقات والمناقشات التفاعلي الحقيقي المربوط بحسابك ديسكاس -->
 <div class="card">
     <div id="disqus_thread"></div>
     <script>
@@ -308,14 +382,3 @@ function startSpeedTest() {
 
 function checkNetworkDetails() {
     const status = document.getElementById('net-status');
-    const rtt = document.getElementById('net-rtt');
-    if (navigator.onLine) { status.innerText = "متصل 🟢"; status.style.color = "#38bdf8"; }
-    else { status.innerText = "غير متصل 🔴"; status.style.color = "#ef4444"; }
-    if (navigator.connection) { rtt.innerText = navigator.connection.rtt || "غير متاح"; }
-}
-
-window.addEventListener('DOMContentLoaded', () => { checkNetworkDetails(); });
-</script>
-
-</body>
-</html>
